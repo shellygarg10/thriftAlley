@@ -1,0 +1,115 @@
+.AdminLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f3f3f3;
+}
+
+.AdminLogin-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.AdminLogin h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.AdminLogin-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.AdminLogin-fields input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.AdminLogin-fields input:focus {
+  border-color: #007bff;
+}
+
+.AdminLogin button {
+  background-color: #ffea00;
+  color: black;
+  padding: 14px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.AdminLogin button:hover {
+  background-color: #d9d500;
+}
+
+.AdminLogin-login {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 15px;
+}
+
+.AdminLogin-login span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.AdminLogin-login span:hover {
+  text-decoration: underline;
+}
+
+.AdminLogin-agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.AdminLogin-agree p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .AdminLogin-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .AdminLogin h1 {
+    font-size: 20px;
+  }
+
+  .AdminLogin-fields input {
+    font-size: 13px;
+  }
+
+  .AdminLogin button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .AdminLogin-login {
+    font-size: 13px;
+  }
+}

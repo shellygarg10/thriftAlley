@@ -1,0 +1,39 @@
+.product-details-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.related-products-section {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+.related-products-section h2 {
+  font-size: 2rem;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    padding: 20px 15px;
+  }
+
+  .related-products-section {
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+
+  .related-products-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}

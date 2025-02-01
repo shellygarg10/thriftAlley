@@ -1,0 +1,99 @@
+.why-shop {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 40px 20px;
+}
+
+.why-shop h1 {
+  color: #000;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+}
+
+.why-shop-container {
+  display: flex;
+  align-items: stretch;
+  padding: 15px;
+  justify-content: space-evenly;
+  gap: 35px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-shop-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 230px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.why-shop-box:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.why-shop-box img {
+  max-height: 80px;
+  width: 100%;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.why-shop-box p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 2px 15px;
+  flex-grow: 1;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .why-shop {
+    padding: 30px 15px;
+  }
+
+  .why-shop h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .why-shop-container {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .why-shop-box {
+    width: 100%;
+    min-height: auto;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .why-shop-box img {
+    max-height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .why-shop-box p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,93 @@
+.footer{
+  background-color: black;
+  height: auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  gap: 20px;
+}
+
+.footer-col{
+  flex: 1;
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+.footer-col h1{
+  font-size: 1.8em;
+  font-family: 'Shrikhand';
+}
+.footer-col h2{
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+.footer-col p{
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+#footer-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-1 img{
+  max-height: 8rem;
+}
+
+.social-logos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon{
+  width:50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 30px 15px;
+  }
+
+  .footer-col {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0;
+  }
+
+  .social-icon {
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-col h1 {
+      font-size: 25px;
+  }
+
+  .footer-col h2 {
+      font-size: 18px;
+  }
+
+  .footer-col p {
+      font-size: 16px;
+  }
+
+  .social-icon {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+h2:not(.footer h2) {
+  color: black;
+}

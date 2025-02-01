@@ -1,0 +1,92 @@
+.add-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.add-form p {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-inline {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.tall-input {
+  height: 40px;
+  padding-left: 5px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.size-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.add-color-button {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  margin-left: 10px;
+  background-color: rgb(123, 123, 123);
+}
+
+.color-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-tag {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.remove-color {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.form-group img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.add-form button[type="submit"] {
+  width: 60px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-form button[type="submit"]:hover {
+  background-color: rgb(62, 62, 62);
+}

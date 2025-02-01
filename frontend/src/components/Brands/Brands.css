@@ -1,0 +1,93 @@
+.brands {
+  height: auto;
+  margin: 20px;
+  padding: 0px;
+  text-align: center;
+}
+
+.brands h1 {
+  font-size: 3.2rem;
+  font-family: "Shrikhand";
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.brands h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.brands-logo {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.brands-logo img {
+  height: 180px;
+  width: 180px;
+  border: 2px solid black;
+  padding: 10px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.brands button {
+  width: 80%;
+  max-width: 250px;
+  padding: 15px;
+  border: none;
+  border-radius: 75px;
+  font-size: 1.5rem;
+  font-family: "poppins", sans-serif;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.brands button:hover {
+  background-color: rgb(84, 84, 84);
+}
+
+@media (max-width: 768px) {
+  .brands-logo {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .brands h1 {
+    font-size: 2rem;
+  }
+
+  .brands-logo img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .brands button {
+    width: 150px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-logo {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .brands-logo img {
+    height: 100px;
+    width: 100px;
+  }
+}

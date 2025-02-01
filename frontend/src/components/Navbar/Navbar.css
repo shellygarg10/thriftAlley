@@ -1,0 +1,267 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.nav-logo img {
+  height: 60px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li:hover {
+  color: #d4d3d3;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  color: #d4d3d3;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.nav-login-cart button {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 75px;
+  font-size: 20px;
+  font-family: "poppins";
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-login-cart button:hover {
+  background-color: rgb(84, 84, 84);
+  border: none;
+}
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-link img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.nav-cart-count {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -5px;
+  right: -2px;
+  color: #000;
+  background-color: rgb(169, 169, 169);
+  font-size: 17px;
+}
+
+.nav-dropdown-icon {
+  display: none;
+}
+
+.user-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+  filter: brightness(0) invert(1);
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 1000;
+  min-width: 150px;
+  border: 1px solid #e0e0e0;
+}
+
+.user-dropdown div {
+  padding: 10px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.user-dropdown div:hover {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-dropdown-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    background: black;
+    width: auto;
+    flex-direction: column;
+    padding: 15px 25px;
+    gap: 15px;
+    z-index: 1000;
+    color: white;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu li {
+    color: white;
+    padding: 5px 0;
+    white-space: nowrap;
+  }
+
+  .nav-menu li:hover {
+    color: #d4d3d3;
+  }
+
+  .nav-login-cart button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    width: auto;
+    background-color: black;
+    padding: 15px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: 3000;
+  }
+
+  .nav-dropdown-icon {
+    display: block;
+    height: 30px;
+  }
+
+  .nav-menu li {
+    display: block;
+    font-size: 18px;
+    width: auto;
+    padding: 5px 0;
+    white-space: nowrap;
+  }
+
+  .nav-menu li:hover {
+    background-color: #1a1a1a;
+  }
+
+  .nav-login-cart {
+    gap: 15px;
+  }
+
+  .nav-login-cart img {
+    height: 35px;
+  }
+
+  .nav-cart-count {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    top: -8px;
+    right: -8px;
+  }
+
+  .cart-link img {
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-logo img {
+    height: 50px;
+  }
+
+  .nav-login-cart button {
+    width: 70px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .nav-menu {
+    width: auto;
+  }
+}
