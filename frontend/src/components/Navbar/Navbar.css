@@ -43,7 +43,10 @@
   color: white;
   text-decoration: none;
 }
-
+.admin-container a{
+  color: beige;
+  text-decoration: none;
+}
 .nav-menu li a:hover {
   color: #d4d3d3;
 }

@@ -59,8 +59,11 @@ const Navbar = () => {
         <li onClick={() => handleCategoryClick("Bottoms")}>Bottoms</li>
         <li onClick={() => handleCategoryClick("Dresses")}>Dresses</li>
       </ul>
-
+      
       <div className="nav-login-cart">
+      <div className="admin-container">
+        <a href="https://thrift-alley-admin.vercel.app/" target="_blank">Admin</a>
+      </div>
         <div className="user-menu-container">
           <img
             src={user_icon}
